@@ -17,9 +17,7 @@
 }
 
 body {
-  max-width: 100%;
-  height: 100vh;
-  font-size: 62.5%;
+  height: 100svh;
 }
 
 body {
@@ -27,24 +25,122 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
+  background-color: var(--Cream);
 }
 
+/* Container style*/
 .product-card {
   width: 37.5rem;
   height: 28.25rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  border-radius: 20px;
+}
+
+/* Product image style*/
+.product-img {
+  width: 18.25rem;
+  
 }
 
 .product-img picture img{
-  width: 18.75rem;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
+/* Product info style*/
 .product-info {
-  width: 18.75rem;
-  height: auto;
+  width: 18.25rem;
+  display: flex;
+  flex-flow: column ;
+  justify-content: flex-start;
+  padding: 2.1875rem;
+  gap: 1.68rem;
+  background-color: var(--White);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+h1, p, .main-price, .add-to-cart-btn {
+  font-family: 'Montserrat';
+  color: var(--Dark-grayish-blue);
+}
+
+h2, .discount {
+  font-family: 'Fraunces';
+}
+
+h1 {
+  font-size: 0.8750rem;
+  font-weight: 500;
+  letter-spacing: 7px;
+}
+
+h2 {
+  font-size: 1.5625rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.8750rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discount {
+  font-size: 1.8125rem;
+  color: var(--Dark-cyan);
+}
+
+.main-price {
+  font-size: 0.8750rem;
+}
+
+button {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: 0;
+  width: 100%;
+  height: 3.125rem;
+  background-color: var(--Dark-cyan);
+  border-radius: 10px;
+  color: var(--White);
+}
+
+button:hover {
+  background-color: var(--Very-dark-blue);
+  cursor: pointer;
+}
+
+button img {
+  padding-right: 0.625rem;
+}
+
+button div {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .product-info {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .product-img picture img{
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+
 }
