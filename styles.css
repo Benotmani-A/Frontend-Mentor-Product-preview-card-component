@@ -15,11 +15,6 @@
   box-sizing: border-box;
   
 }
-
-body {
-  height: 100svh;
-}
-
 body {
   display: flex;
   flex-wrap: wrap;
