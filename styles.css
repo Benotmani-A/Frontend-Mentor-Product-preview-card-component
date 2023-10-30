@@ -35,13 +35,14 @@ body {
   height: 28.25rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-img picture img{
-  display: flex;
-  flex-wrap: wrap;
   width: 18.75rem;
   height: auto;
+  object-fit: cover;
 }
 
 .product-info {
