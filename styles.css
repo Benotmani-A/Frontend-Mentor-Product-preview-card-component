@@ -42,7 +42,6 @@ body {
 .product-img picture img{
   width: 18.75rem;
   height: auto;
-  object-fit: cover;
 }
 
 .product-info {
